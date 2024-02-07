@@ -1,0 +1,142 @@
+/* @import url ('') */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#c2c887;
+    display:flex;
+    flex-direction:column;
+    color:white;
+    align-items:center;
+    justify-content: center;
+    height:100vh;
+    font-family:'Lato', sans-serif; 
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+   
+
+.logo{
+    margin-left:50px;
+    width:70%;
+    height:15%;
+}
+
+.seat{
+    background-color: #444451;
+    height:18px;
+    width:21px;
+    margin:3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+
+
+}
+.row{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+} 
+ .movie-container{
+     margin: 20px 0;
+ }
+ .movie-container select{
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+ }
+ .seat.selected{
+     background-color: red;
+ }
+ .seat.occupied{
+     background-color: white;
+ }
+ .seat:nth-of-type(2){
+     margin-right: 20px;
+ }
+ .seat:nth-of-type(6){
+    margin-right: 20px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+} 
+.showcase{
+    background-color: rgba(0,0,0,0.1);
+    padding:  5px 10px;
+    border-radius: 5px;
+    list-style-type:none;
+    color:#777;
+    display:flex;
+    justify-content:space-between;
+}
+.showcase li{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.showcase li small{
+    margin-left: 10px;
+}
+.screen{
+    background-color: #fff;
+    height: 100px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255,255,255,0.75);
+}
+.container{
+    perspective: 1000px;
+}
+p.text{
+    margin: 5px 0;
+
+}
+p.text span{
+    color: white;
+}
+.footer-container {
+    display: flex;
+    justify-content: flex-end; /* Align footer to the right */
+}
+.footer-container {
+    display: flex;
+    justify-content: flex-end; /* Align footer to the right */
+}
+.footer {
+    background-color: #007bff; /* Same color as Pay Now button */
+    color: #fff; /* Same color as Pay Now button text */
+    padding: 12px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Same border radius as Pay Now button */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16); /* Same shadow as Pay Now button */
+}
+.book-now {
+    text-decoration: none; /* Remove default link underline */
+    font-size: 16px; /* Same font size as Pay Now button */
+    font-weight: 600; /* Same font weight as Pay Now button */
+}
+
+.book-now i {
+    margin-left: 5px; /* Adjust spacing between text and icon */
+}
+
+
+

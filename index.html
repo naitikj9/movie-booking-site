@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking_app</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img class="logo" src = "D:\Code\projects\booking app\assets\flick-fusion-high-resolution-logo.png" alt ="movie-logo" >
+        </div>
+        <hr class="line">
+    </header>
+    <div class="movie-container">
+        <label>Pick a Movie:</label>
+        <select id="movie">
+            <option value="220">Animal(Rs.220)</option>
+            <option value="250">Fighter(Rs.250)</option>
+            <option value="270">Kalki(Rs.270)</option>
+            <option value="300">Venom 3(Rs.300)</option>
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="seat available"></div>
+            <small>Available</small>
+         </li>
+         <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+         </li>
+         <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+         </li>
+    </ul>
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occpied"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <div class="row">
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+        </div>
+        <p class="text">
+            You have selected <span id="count">0</span> seats for a price of Rs.<span id="total">0</span>
+        </p>
+        <div class="footer-container">
+            <div class="footer">
+                <span class="book-now">Book Now <i class="fas fa-arrow-right"></i></span>
+            </div>
+        </div>
+<script src="script.js"></script>
+</body>
+
+</html>
